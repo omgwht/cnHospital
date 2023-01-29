@@ -5,6 +5,19 @@
 		<title>智慧中医院</title>
 		<link type="text/css" rel="stylesheet" href="./css/mainPage.css">
 		<script type="text/javascript" src="./js/mainPage.js"></script>
+		<script type="text/javascript">
+			var system = {};
+			var p = navigator.platform;
+			system.win = p.indexOf("Win") == 0;
+			system.mac = p.indexOf("Mac") == 0;
+			system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+			if (system.win || system.mac || system.xll) {
+				//如果是电脑跳转到
+			   window.location.href = "./index.html";
+			} else {  
+			  alert("暂不支持使用手机查看，请使用电脑！")
+			}
+		  </script>
 	</head>
 	<body>
 		<!-- 左上角两行字 -->
